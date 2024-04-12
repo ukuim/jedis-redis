@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Redis-Test
+  data:
+    redis:
+      host: 192.168.80.129
+      port: 6379
+      password: root
+      timeout: 3000
+      database: 0
+      url: redis://root@192.168.80.129:6379   #?????
+  datasource:
+    url: jdbc:mysql://192.168.80.129:3306/sp?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8080
